@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import './App.css';
 import Sidebar from './components/sidebar'
 import Table from './components/table'
+import Overview from './components/overview'
 
 class App extends Component {
 
@@ -14,7 +15,7 @@ class App extends Component {
       <div>
 
         <Sidebar className='sidebar' productData={this.props.productData} />
-        some random stuff
+        <Overview className='overview' productData={this.props.productData[0]} />
         <Table className='table' productData={this.props.productData} />
 
       </div>
