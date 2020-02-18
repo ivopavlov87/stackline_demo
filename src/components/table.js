@@ -18,8 +18,6 @@ const Table = ({ productData }) => {
     
   function renderTableData() {
 
-
-
     return (
       <table id='sales-table'>
         <thead>

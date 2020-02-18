@@ -14,7 +14,7 @@ function productData(state = product_data) {
   return state;
 }
 
-const store = createStore(productData); // This is reducers
+const store = createStore(productData);
 
 ReactDOM.render(
   <Provider store={store}>

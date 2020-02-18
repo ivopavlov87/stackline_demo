@@ -28,7 +28,6 @@ class App extends Component {
   }
 }
 
-
 // giving App.js access to state
 export default connect(
   state => ({
