@@ -18,7 +18,7 @@ const store = createStore(productData); // This is reducers
 
 ReactDOM.render(
   <Provider store={store}>
-  <img className='stackline-logo' src='https://image4.owler.com/logo/stackline_owler_20170129_010716_original.png' />
+  <img className='stackline-logo' src='https://image4.owler.com/logo/stackline_owler_20170129_010716_original.png' alt='stackline-logo' />
     <App />
   </Provider>,
   document.getElementById("root")

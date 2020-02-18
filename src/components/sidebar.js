@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from "react-dom";
 
 const Sidebar = ({productData}) => {
 
@@ -14,8 +13,8 @@ const Sidebar = ({productData}) => {
           <h2 className="sidebar-title">{productData.title}</h2>
           <h3 className="sidebar-subtitle">{productData.subtitle}</h3>
           <div className="tags">
-            {productData.tags.map(tag => (
-              <h5 className="sidebar-tag">{tag}</h5>
+            {productData.tags.map((tag, index) => (
+              <h5 key={index + 12000} className="sidebar-tag">{tag}</h5>
             ))}
           </div>
           <div className="display-buttons">
@@ -28,16 +27,3 @@ const Sidebar = ({productData}) => {
 }
 
 export default Sidebar;
-
-// class Sidebar extends React.Component {
-//   constructor(props) {
-//     super(props);
-
-//     this.state = {
-//       sales: false,
-//       overview: true
-//     };
-//   }
-// }
-
-// export default Sidebar;
