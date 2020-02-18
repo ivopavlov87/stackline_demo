@@ -2,10 +2,12 @@ import React from "react";
 
 const Table = ({ productData }) => {
 
+  // adds commas to properly space numbers at every third digit
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
+  // formats date correctly to MM-DD-YY from YYYY-MM-DD
   function properDate(date){
     date = date.split('-');
     let year = date[0];
@@ -26,7 +28,7 @@ const Table = ({ productData }) => {
             <th>Retailer Margin</th>
           </tr>
         </thead>
-        {productData[0].sales.map((saleWeek, idx) => {
+        {productData.sales.map((saleWeek, idx) => {
           const {
             weekEnding,
             retailSales,

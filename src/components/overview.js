@@ -3,12 +3,12 @@ import React from "react";
 const Overview = ({ productData }) => {
   return (
     <div>
-      <h3>
+      <h2>
         {productData.title} by {productData.brand}
-      </h3>
-      <h4>{productData.subtitle}</h4>
-      <h5>Retailer: {productData.retailer}</h5>
-      <h5>Product ID: {productData.id}</h5>
+      </h2>
+      <h3>{productData.subtitle}</h3>
+      <h4>Retailer: {productData.retailer}</h4>
+      <h4>Product ID: {productData.id}</h4>
       <div className="details">
         <h4>Details:</h4>
         <ul>{productData.details.map((detail, index) => (

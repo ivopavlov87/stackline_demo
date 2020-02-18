@@ -14,9 +14,9 @@ class App extends Component {
     return (
       <div>
 
-        <Sidebar className='sidebar' productData={this.props.productData} />
+        <Sidebar className='sidebar' productData={this.props.productData[0]} />
         <Overview className='overview' productData={this.props.productData[0]} />
-        <Table className='table' productData={this.props.productData} />
+        <Table className='table' productData={this.props.productData[0]} />
 
       </div>
     );

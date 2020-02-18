@@ -2,24 +2,14 @@ import React from 'react';
 
 const Sidebar = ({productData}) => {
     return (
-      <div>
-        <div className="sidebar">
-          <ul>
-            {productData.map((arrayItem, index) => (
-              <div key={index + 6000}>
-                <img src={`${arrayItem.image}`} alt={`${arrayItem.subtitle}`}></img>
-                <li key={index + 2000}>{arrayItem.title}</li>
-                <li key={index + 3000}>{arrayItem.subtitle}</li>
-                <li key={index + 4000}>
-                  <ul>
-                    {arrayItem.tags.map((tag, idx) => (
-                      <li className="tags" key={idx + 5000}>{tag}</li>
-                    ))}
-                  </ul>
-                </li>
-              </div>
-            ))}
-          </ul>
+      <div className="sidebar">
+        <img src={`${productData.image}`} alt={`${productData.subtitle}`}></img>
+        <h2>{productData.title}</h2>
+        <h3>{productData.subtitle}</h3>
+        <div className="tags">
+          {productData.tags.map((tag) => (
+            <h5>{tag}</h5>
+          ))}
         </div>
       </div>
     );
