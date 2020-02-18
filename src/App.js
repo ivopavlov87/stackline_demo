@@ -12,12 +12,12 @@ class App extends Component {
     console.log(this.props.productData[0].sales); // full array
 
     return (
-      <div>
-
-        <Sidebar className='sidebar' productData={this.props.productData[0]} />
-        <Overview className='overview' productData={this.props.productData[0]} />
-        <Table className='table' productData={this.props.productData[0]} />
-
+      <div className="stackline-demo">
+        <Sidebar className="sidebar" productData={this.props.productData[0]} />
+        <div>
+          <Table className="table" productData={this.props.productData[0]} />
+          <Overview className="overview" productData={this.props.productData[0]}/>
+        </div>
       </div>
     );
   }

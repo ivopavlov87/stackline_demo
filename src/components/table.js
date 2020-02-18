@@ -18,7 +18,7 @@ const Table = ({ productData }) => {
     
   function renderTableData() {
     return (
-      <table>
+      <table id='sales-table'>
         <thead>
           <tr>
             <th>Week Ending</th>

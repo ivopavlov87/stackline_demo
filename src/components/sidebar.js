@@ -3,7 +3,7 @@ import React from 'react';
 const Sidebar = ({productData}) => {
     return (
       <div className="sidebar">
-        <img src={`${productData.image}`} alt={`${productData.subtitle}`}></img>
+        <img className='product-image' src={`${productData.image}`} alt={`${productData.subtitle}`}></img>
         <h2>{productData.title}</h2>
         <h3>{productData.subtitle}</h3>
         <div className="tags">
