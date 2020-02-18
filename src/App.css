@@ -1,3 +1,17 @@
+.stackline-logo{
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.sidebar{
+  border-top: 75px solid #ddd;
+  border-right: 20px solid #ddd;
+  border-left: 20px solid #ddd;
+  border-bottom: 20px solid #ddd;
+}
+
 .stackline-demo {
   display: flex;
   flex-direction: row;
@@ -22,9 +36,10 @@
 .tags{
   display: flex;
   flex-flow: row wrap;
-  margin: 10px;
   padding: 10px;
   text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .sidebar-tag{
@@ -35,11 +50,35 @@
   padding: 0 10px 0 10px;
 }
 
+.overview-block{
+  width: auto;
+  border-top: 20px solid #ddd;
+  border-right: 20px solid #ddd;
+  border-bottom: 20px solid #ddd;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.display-buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn{
+  margin: 10px 20px 10px 20px;
+}
+
+
 #sales-table {
+  display: inline-table;
   text-align: center;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  border: 3px solid #ddd;
+  border-top: 75px solid #ddd;
+  border-right: 20px solid #ddd;
+  border-bottom: 20px solid #ddd;
   width: 100%;
 }
 

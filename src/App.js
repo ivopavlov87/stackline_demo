@@ -16,7 +16,12 @@ class App extends Component {
         <Sidebar className="sidebar" productData={this.props.productData[0]} />
         <div>
           <Table className="table" productData={this.props.productData[0]} />
-          <Overview className="overview" productData={this.props.productData[0]}/>
+          <div className="overview-block">
+            <Overview
+              className="overview"
+              productData={this.props.productData[0]}
+            />
+          </div>
         </div>
       </div>
     );
