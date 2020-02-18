@@ -14,7 +14,7 @@ class App extends Component {
       <div>
 
         <Sidebar className='sidebar' productData={this.props.productData} />
-
+        some random stuff
         <Table className='table' productData={this.props.productData} />
 
       </div>
