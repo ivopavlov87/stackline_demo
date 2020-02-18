@@ -17,15 +17,18 @@ const Table = ({ productData }) => {
   }
     
   function renderTableData() {
+
+
+
     return (
       <table id='sales-table'>
         <thead>
           <tr>
-            <th>Week Ending</th>
-            <th>Retail Sales</th>
-            <th>Wholesale Sales</th>
-            <th>Units Sold</th>
-            <th>Retailer Margin</th>
+            <th>WEEK ENDING</th>
+            <th>RETAIL SALES</th>
+            <th>WHOLESALE SALES</th>
+            <th>UNITS SOLD</th>
+            <th>RETAILER MARGIN</th>
           </tr>
         </thead>
         {productData.sales.map((saleWeek, idx) => {
