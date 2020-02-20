@@ -1,25 +1,12 @@
 import React from "react";
+import * as helpers from '../util/helpers.js';
 
 const Table = ({ productData }) => {
-
-  // adds commas to properly space numbers at every third digit
-  function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
-
-  // formats date correctly to MM-DD-YY from YYYY-MM-DD
-  function properDate(date){
-    date = date.split('-');
-    let year = date[0];
-    let day = date[2];
-    let month = date[1];
-    return [month, day, year.slice(2)].join('-');
-  }
-    
+  
   function renderTableData() {
 
     return (
-      <table id='sales-table'>
+      <table id="sales-table">
         <thead>
           <tr>
             <th>WEEK ENDING</th>
@@ -40,11 +27,11 @@ const Table = ({ productData }) => {
           return (
             <tbody key={idx + 7000}>
               <tr key={idx + 1000}>
-                <td>{properDate(weekEnding)}</td>
-                <td>{"$" + numberWithCommas(retailSales)}</td>
-                <td>{"$" + numberWithCommas(wholesaleSales)}</td>
-                <td>{numberWithCommas(unitsSold)}</td>
-                <td>{"$" + numberWithCommas(retailerMargin)}</td>
+                <td>{helpers.properDate(weekEnding, "number")}</td>
+                <td>{"$" + retailSales.toLocaleString()}</td>
+                <td>{"$" + wholesaleSales.toLocaleString()}</td>
+                <td>{unitsSold.toLocaleString()}</td>
+                <td>{"$" + retailerMargin.toLocaleString()}</td>
               </tr>
             </tbody>
           );

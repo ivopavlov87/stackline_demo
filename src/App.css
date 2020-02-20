@@ -7,7 +7,7 @@
 
 .sidebar{
   height: auto;
-  border-top: 75px solid #ddd;
+  border-top: 35px solid #ddd;
   border-right: 20px solid #ddd;
   border-left: 20px solid #ddd;
   border-bottom: 20px solid #ddd;
@@ -16,7 +16,7 @@
 .sidebar-stick{
   position: -webkit-sticky;
   position: sticky;
-  top: 25px;
+  top: -20px;
 }
 
 .stackline-demo {
@@ -25,6 +25,7 @@
 }
 
 .product-image{
+  border-top: 40px solid #ddd;
   width: 300px;
 }
 
@@ -77,15 +78,24 @@
   margin: 10px 20px 10px 20px;
 }
 
+.graph-title{
+  margin: 25px 0px 0px 25px;
+}
+
+.graph-box{
+  position: -webkit-sticky;
+  position: sticky;
+  top: -55px;
+}
 
 #sales-table {
   display: inline-table;
   text-align: center;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  border-top: 75px solid #ddd;
+  border-top: 0px solid #ddd;
   border-right: 20px solid #ddd;
-  border-bottom: 20px solid #ddd;
+  border-bottom: 0px solid #ddd;
   width: 100%;
 }
 

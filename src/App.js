@@ -4,7 +4,7 @@ import './App.css';
 import Sidebar from './components/sidebar';
 import Table from './components/table';
 import Overview from './components/overview';
-// import Graph from './components/graph';
+import Graph from './components/graph';
 
 class App extends Component {
 
@@ -12,14 +12,14 @@ class App extends Component {
 
     return (
       <div className="stackline-demo">
-        <Sidebar className="sidebar" productData={this.props.productData[0]} />
+        <Sidebar className="sidebar" productData={this.props.productData} />
         <div>
-          {/* <Graph className="graph" productData={this.props.productData[0]} /> */}
-          <Table className="table" productData={this.props.productData[0]} />
+          <Graph className="graph" productData={this.props.productData} />
+          <Table className="table" productData={this.props.productData} />
           <div className="overview-block">
             <Overview
               className="overview"
-              productData={this.props.productData[0]}
+              productData={this.props.productData}
             />
           </div>
         </div>

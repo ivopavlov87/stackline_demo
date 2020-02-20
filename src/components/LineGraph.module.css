@@ -1,0 +1,7 @@
+.graphContainer {
+    background: white;
+    border-top: 75px solid #ddd;
+    border-right: 20px solid #ddd;
+    border-bottom: 20px solid #ddd;
+    border-left: 1px solid #ddd;
+}

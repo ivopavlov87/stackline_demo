@@ -9,7 +9,7 @@ import { createStore } from "redux";
 import product_data from "./product_data.json";
 
 // population of state
-function productData(state = product_data) {
+function productData(state = product_data[0]) {
   // Clients is array data
   return state;
 }
